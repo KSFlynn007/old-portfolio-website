@@ -84,6 +84,11 @@ hr {
   grid-column: 1 / span 3;
 }
 
+.LinkedIn,
+.github {
+  text-decoration: none;
+}
+
 body {
   font-family: var(--primary-font-family);
   font-weight: var(--normal-weight);
@@ -133,14 +138,12 @@ a:focus {
 }
 
 /*INDEX PAGE SPECIFIC*/
-.work-link {
-  text-align: center;
-}
 
 .profile,
 .about-me {
   max-width: 700px;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .profile_portrait {
@@ -148,7 +151,7 @@ a:focus {
   width: 250px;
   height: auto;
   height: 30%;
-  margin-right: 40px;
+  margin: 30px 40px 0px 0px;
   border-radius: 50%;
 }
 /*INDEX PAGE SPECIFIC END*/
@@ -184,8 +187,17 @@ a:focus {
 
 /*ABOUT ME PAGE SPECIFIC*/
 table {
+  border: 0.5px solid var(--text-color-black);
   margin: 0 auto;
   margin-bottom: 50px;
+  padding: 15px;
+}
+
+td,
+th {
+  border-spacing: 5px;
+  padding: 5px;
+  text-align: center;
 }
 
 .location-picture {
