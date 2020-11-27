@@ -282,6 +282,9 @@ th {
 
 /*RESPONSIVENESS*/
 @media all and (min-width: 300px) and (max-width: 400px) {
+  .navigation-list {
+    padding: 0;
+  }
   p {
     font-size: var(--minimize-font);
   }
