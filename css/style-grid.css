@@ -47,6 +47,7 @@ Bright Accent Color (Bright Teal): 0EC1AB
   align-items: center;
   justify-items: center;
   overflow: auto;
+  border-bottom: 2px solid var(--bright-accent-color);
 }
 
 .navigation-list {
