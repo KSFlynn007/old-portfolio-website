@@ -30,6 +30,7 @@ Bright Accent Color (Bright Teal): 0EC1AB
   --primary-grid-gap: 15px;
   --big-grid-gap: 30px;
   --small-grid-gap: 10px;
+  --xsmall-grid-gap: 5px;
 }
 
 * {
@@ -45,6 +46,7 @@ Bright Accent Color (Bright Teal): 0EC1AB
   margin: 0 auto;
   align-items: center;
   justify-items: center;
+  overflow: auto;
 }
 
 .navigation-list {
@@ -284,6 +286,10 @@ th {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     font-size: var(--minimize-font);
+  }
+
+  .navigation-list {
+    grid-gap: var(--xsmall-grid-gap);
   }
 
   hr {
