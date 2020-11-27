@@ -159,7 +159,6 @@ a:focus {
 }
 /*INDEX PAGE SPECIFIC END*/
 
-.submit-button,
 .cv-button {
   border: none;
   display: inline-block;
@@ -169,7 +168,7 @@ a:focus {
   background-color: var(--white-color);
   text-decoration: none;
   padding: 10px;
-  margin: 0 auto;
+  margin: 40px auto;
   border-radius: 5px;
   border: 3px solid var(--bright-accent-color);
   transition: all 0.5s ease;
@@ -189,10 +188,14 @@ a:focus {
 }
 
 /*ABOUT ME PAGE SPECIFIC*/
+.bio {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
 table {
   border: 0.5px solid var(--text-color-black);
   margin: 0 auto;
-  margin-bottom: 50px;
   padding: 15px;
 }
 
@@ -287,12 +290,53 @@ th {
   text-align: center;
 }
 
+.my-address_name,
+.my-address_street,
+.my-address_city,
+.my-address_country,
+.contact-me_phone,
+.contact-me_skype,
+.contact-me_email,
+.contact-me_link {
+  display: block;
+}
+
+.my-address_country {
+  margin-bottom: 15px;
+}
+
+.contact-me_link {
+  margin: 40px 0px;
+}
+
 .form-container {
   padding: 15px 10px;
   max-width: 700px;
   margin: 0 auto;
   background-color: rgba(72, 72, 78, 0.5);
   border-radius: 7%;
+}
+
+.form-name,
+.form-email,
+.form-message {
+  display: block;
+  margin: 15px;
+}
+
+.submit-button {
+  display: block;
+  margin: 30px auto 15px auto;
+  border: none;
+  font-family: var(--primary-font-family);
+  font-size: var(--base-font);
+  color: var(--text-color-black);
+  background-color: var(--white-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid var(--bright-accent-color);
+  transition: all 0.5s ease;
 }
 
 #your-name,

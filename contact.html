@@ -37,35 +37,28 @@
     <main class="contact">
       <h1>Contact</h1>
       <p>
-        Kelsey Flynn <br />
-        117 Haverhill Road <br />
-        Calgary, AB <br />
-        Canada <br />
-        <br />
-        Tel: <a href="tel:+1403-808-2573" aria-label="Call me at:">+1. 403. 808. 2573.</a> <br />
-        Skype: <a href="skype:live:kelseyflynnn"> Kelsey Flynn</a> <br />
-        Email: <a href="mailto:kelseyflynn@gmail.com">kelseyflynnn@gmail.com</a>
-        <br />
-        <br />
-        <a href="mailto:kelseyflynnn@gmail.com">Contact me!</a>
+        <span class="my-address_name">Kelsey Flynn</span>
+        <span class="my-address_street">117 Haverhill Road</span>
+        <span class="my-address_city">Calgary, AB</span>
+        <span class="my-address_country">Canada</span>
+        
+        <span class="contact-me_phone"><a href="tel:+1403-808-2573" aria-label="Call me at:">+1. 403. 808. 2573.</a></span>
+        <span class="contact-me_phone">Skype: <a href="skype:live:kelseyflynnn"> Kelsey Flynn</a></span>
+        <span class="contact-me_email"><a href="mailto:kelseyflynn@gmail.com">kelseyflynnn@gmail.com</a></span>
+
+        <span class="contact-me_link"><a href="mailto:kelseyflynnn@gmail.com">Contact me!</a></span>
       </p>
-      <br />
       <div class="form-container">
       <form method="post" class="contact-form">
         
-        <label for="your-name">Your Name: </label> <br />
+        <span class="form-name"><label for="your-name">Your Name: </label></span>
         <input type="text" id="your-name" placeholder="Your Name..." required>
-        <br /> <br />
       
-        <label for="contact-email">Email: </label> <br />
+        <span class="form-email"><label for="contact-email">Email: </label></span>
         <input type="email" id="contact-email" placeholder="Your Email..." required>
-        <br /> <br />
       
-        <label for="contact-message">Message: (Maximum 300 characters) </label>
-        <br />
-      
+       <span class="form-message"><label for="contact-message">Message: (Maximum 300 characters) </label></span>      
         <textarea id="contact-message" placeholder="Something to say?" required maxlength="300"></textarea>
-        <br /> <br />
       
         <input class="submit-button" type="submit" value="Send It!">
       </form>
