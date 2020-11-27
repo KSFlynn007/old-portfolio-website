@@ -279,12 +279,6 @@ th {
 /*PROJECTS PAGE SPECIFIC END*/
 
 /*RESPONSIVENESS*/
-@media all and (min-width: 360px) and (max-width: 550px) {
-  .profile_portrait {
-    float: none;
-  }
-}
-
 @media all and (max-width: 550px) {
   .page-header {
     grid-template-columns: 1fr;
@@ -294,6 +288,10 @@ th {
 
   hr {
     opacity: 45%;
+  }
+
+  .profile_portrait {
+    float: none;
   }
 
   .grid {
