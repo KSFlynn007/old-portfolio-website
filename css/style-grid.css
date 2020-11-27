@@ -292,7 +292,6 @@ th {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     font-size: var(--minimize-font);
-    max-width: 100%;
   }
 
   .logo-image {
