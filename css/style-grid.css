@@ -18,11 +18,11 @@ Bright Accent Color (Bright Teal): 0EC1AB
   --light-color-teal: #8bc1b9;
   --background-color: #ece9e7;
   --white-color: #ffffff;
-  --base-font: 22px;
   --big-header: 30px;
   --medium-header: 26px;
   --small-header: 24px;
   --tiny-font: 12px;
+  --base-font: 22px;
   --minimize-font: 20px;
   --normal-weight: 500;
   --bold-weight: 600;
@@ -281,15 +281,27 @@ th {
 /*PROJECTS PAGE SPECIFIC END*/
 
 /*RESPONSIVENESS*/
+@media all and (min-width: 300px) and (max-width: 400px) {
+  p {
+    font-size: var(--minimize-font);
+  }
+}
+
 @media all and (max-width: 550px) {
   .page-header {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     font-size: var(--minimize-font);
+    max-width: 100%;
+  }
+
+  .logo-image {
+    max-width: 100%;
   }
 
   .navigation-list {
     grid-gap: var(--xsmall-grid-gap);
+    max-width: 100%;
   }
 
   hr {
