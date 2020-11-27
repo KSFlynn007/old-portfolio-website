@@ -36,6 +36,7 @@ Bright Accent Color (Bright Teal): 0EC1AB
   -ms-flex-align: center;
   align-items: center;
   justify-items: center;
+  overflow: auto;
 }
 
 .page-header > *:nth-child(1) {
@@ -201,7 +202,7 @@ a:focus {
 
 .source {
   font-size: 12px;
-  opacity: 50%;
+  opacity: 70%;
 }
 
 /*INDEX PAGE SPECIFIC*/
@@ -431,7 +432,37 @@ th {
 }
 /*PROJECTS PAGE SPECIFIC END*/
 
+/*CONTACT PAGE SPECIFIC*/
+.contact {
+  text-align: center;
+}
+
+.form-container {
+  padding: 15px 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: rgba(72, 72, 78, 0.5);
+  border-radius: 7%;
+}
+
+#your-name,
+#contact-email,
+#contact-message {
+  padding: 5px 10px;
+}
+
+/*CONTACT PAGE SPECIFIC END*/
+
 /*RESPONSIVENESS*/
+@media all and (min-width: 300px) and (max-width: 400px) {
+  .navigation-list {
+    padding: 0;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
 @media all and (max-width: 550px) {
   .page-header {
     -ms-grid-columns: 1fr;
@@ -449,9 +480,21 @@ th {
     -ms-grid-column: 1;
   }
 
+  .logo-image {
+    max-width: 100%;
+  }
+
+  .navigation-list {
+    grid-gap: 5px;
+    max-width: 100%;
+  }
+
   hr {
     opacity: 45%;
-    align-item: center;
+  }
+
+  .profile_portrait {
+    float: none;
   }
 
   .grid {
@@ -488,7 +531,6 @@ th {
 
   hr {
     opacity: 45%;
-    align-item: center;
   }
 
   .grid {
