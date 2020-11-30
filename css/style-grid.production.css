@@ -96,10 +96,6 @@ Bright Accent Color (Bright Teal): 0EC1AB
   white-space: nowrap;
 }
 
-hr {
-  opacity: 45%;
-}
-
 .page-footer {
   clear: both;
   display: -ms-grid;
@@ -181,6 +177,10 @@ h2 {
 h3 {
   font-size: 24px;
   font-weight: 600;
+}
+
+p {
+  margin: 0 15px;
 }
 
 a {
@@ -482,13 +482,24 @@ th {
 #contact-message {
   padding: 5px 10px;
 }
-
 /*CONTACT PAGE SPECIFIC END*/
 
 /*RESPONSIVENESS*/
 @supports (display: grid) {
   /*This is where you define each instance of grid if needed */
   .page-header {
+    display: -ms-grid;
+    display: grid;
+  }
+  .navigation-list {
+    display: -ms-grid;
+    display: grid;
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+  }
+  .page-footer {
     display: -ms-grid;
     display: grid;
   }
@@ -500,8 +511,76 @@ th {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .navigation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    justify-items: space-around;
+  }
+
+  .navigation-list_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .grid_item {
+    margin: 0 10px;
+  }
+
+  .page-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  @media all and (max-width: 550px) {
+    .page-header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    .navigation-list_item {
+      padding: 5px;
+    }
   }
 }
+
+@media all and (max-width: 800px) {
+  .grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .grid_item {
+    margin: 10px;
+  }
+}
+
+/*END OF SUPPORT RESPONSIVENESS */
 
 @media all and (min-width: 300px) and (max-width: 400px) {
   .navigation-list {
@@ -538,10 +617,6 @@ th {
     max-width: 100%;
   }
 
-  hr {
-    opacity: 45%;
-  }
-
   .profile_portrait {
     float: none;
   }
@@ -576,10 +651,6 @@ th {
   .page-header > *:nth-child(2) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-  }
-
-  hr {
-    opacity: 45%;
   }
 
   .grid {
