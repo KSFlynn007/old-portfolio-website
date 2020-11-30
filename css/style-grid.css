@@ -344,7 +344,6 @@ th {
 #contact-message {
   padding: 5px 10px;
 }
-
 /*CONTACT PAGE SPECIFIC END*/
 
 /*RESPONSIVENESS*/
@@ -353,14 +352,71 @@ th {
   .page-header {
     display: grid;
   }
+  .navigation-list {
+    display: grid;
+  }
+  .grid {
+    display: grid;
+  }
+  .page-footer {
+    display: grid;
+  }
 }
 
 @supports not (display: grid) {
   /*Define each use of grid from above again, and detail the fallback layout*/
   .page-header {
     display: flex;
+    justify-content: space-around;
+  }
+
+  .navigation-list {
+    display: flex;
+    margin: 0 auto;
+    justify-items: space-around;
+  }
+
+  .navigation-list_item {
+    display: flex;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .grid {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .grid_item {
+    margin: 0 10px;
+  }
+
+  .page-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media all and (max-width: 550px) {
+    .page-header {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .navigation-list_item {
+      padding: 5px;
+    }
   }
 }
+
+@media all and (max-width: 800px) {
+  .grid {
+    flex-direction: column;
+  }
+  .grid_item {
+    margin: 10px;
+  }
+}
+
+/*END OF SUPPORT RESPONSIVENESS */
 
 @media all and (min-width: 300px) and (max-width: 400px) {
   .navigation-list {
