@@ -67,10 +67,6 @@ Bright Accent Color (Bright Teal): 0EC1AB
   white-space: nowrap;
 }
 
-hr {
-  opacity: 45%;
-}
-
 .page-footer {
   clear: both;
   display: grid;
@@ -443,10 +439,6 @@ th {
     max-width: 100%;
   }
 
-  hr {
-    opacity: 45%;
-  }
-
   .profile_portrait {
     float: none;
   }
@@ -470,10 +462,6 @@ th {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     font-size: var(--minimize-font);
-  }
-
-  hr {
-    opacity: 45%;
   }
 
   .grid {
