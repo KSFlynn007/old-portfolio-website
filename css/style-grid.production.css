@@ -458,6 +458,22 @@ th {
 .grid_item:hover {
   background: #8bc1b9;
 }
+
+#project-link1{
+  position: relative;
+  top: 70px;
+}
+
+#project-link3{
+  position: relative;
+  top: 35px;
+}
+
+#project-link4{
+  position: relative;
+  top: 70px;
+}
+
 /*PROJECTS PAGE SPECIFIC END*/
 
 /*CONTACT PAGE SPECIFIC*/
