@@ -1,3 +1,5 @@
-1) Personal portfolio website
-2) All needed resources within the github, only leading CSS file in HTML file
-3) No external API linked
+# Old-Portfolio-Website
+Personal portfolio website V.1  
+
+## Remade March 2021
+[Portfolio V.2](https://github.com/KSFlynn007/portfolio)
